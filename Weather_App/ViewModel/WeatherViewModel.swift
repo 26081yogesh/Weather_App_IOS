@@ -13,9 +13,8 @@ class WeatherViewModel {
 
     //  MARK: API KEY
 
-    private let apiKey = "4a8ee92841a54ff085b83204260605"
+    private let apiKey = "API KEY"
 
-    // http://api.weatherapi.com/v1/current.json?key=4a8ee92841a54ff085b83204260605&q=Bengaluru&aqi=no
 
     func fetchWeatherData(for city: String) async throws -> WeatherModel {
         let urlString = "https://api.weatherapi.com/v1/current.json?key=\(apiKey)&q=\(city)&aqi=no"
